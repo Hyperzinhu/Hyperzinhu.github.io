@@ -1,0 +1,17 @@
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: calc(100vh - 9rem);
+
+  @media (max-width: 991px) {
+    flex-direction: column;
+    gap: 3rem;
+    height: auto;
+    margin-bottom: 12rem;
+  }
+
+  &__image {
+    flex-shrink: 0;
+  }
+}

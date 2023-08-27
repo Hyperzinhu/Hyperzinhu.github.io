@@ -1,0 +1,46 @@
+.projects {
+  margin-bottom: 24rem;
+
+  @media (max-width: 991px) {
+    margin-bottom: 12rem;
+  }
+
+  &__heading {
+    margin-bottom: 12rem;
+
+    @media (max-width: 991px) {
+      margin-bottom: 4.8rem;
+    }
+  }
+
+  &__link {
+    height: 52rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.6rem;
+    transition: $transition;
+
+    @media (max-width: 991px) {
+      height: auto;
+    }
+
+    &:hover {
+      color: $primary;
+
+      svg {
+        stroke: $primary;
+      }
+    }
+
+    svg {
+      fill: none;
+      stroke: $off-white;
+      transition: $transition;
+    }
+  }
+}

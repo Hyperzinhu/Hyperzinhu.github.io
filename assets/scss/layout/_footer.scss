@@ -1,0 +1,50 @@
+.footer {
+  &__container {
+    @include container;
+    border-top: 1px solid #202020;
+    padding: 3rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media (max-width: 991px) {
+      flex-direction: column;
+      gap: 3rem;
+      padding: 3rem 1.5rem;
+    }
+  }
+
+  &__info {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+    @media (max-width: 991px) {
+      flex-wrap: wrap;
+      justify-content: center;
+      text-align: center;
+    }
+  }
+
+  &__link {
+    color: $off-white;
+    font-size: 1.2rem;
+    line-height: 1;
+    font-weight: 500;
+    transition: $transition;
+
+    @media (max-width: 991px) {
+      &:not(.footer__link--social) {
+        flex: 0 0 calc(50% - 10px);
+      }
+    }
+
+    &:hover {
+      color: $primary;
+    }
+
+    &--social {
+      display: flex;
+    }
+  }
+}

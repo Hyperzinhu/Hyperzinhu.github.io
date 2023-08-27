@@ -1,0 +1,19 @@
+.u-container {
+  @include container;
+}
+
+.u-overflow_hidden {
+  overflow: hidden;
+}
+
+.u-mobile {
+  @media (min-width: 991px) {
+    display: none;
+  }
+}
+
+.u-desktop {
+  @media (max-width: 991px) {
+    display: none;
+  }
+}

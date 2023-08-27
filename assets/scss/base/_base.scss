@@ -1,0 +1,41 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: #191919;
+}
+
+::selection {
+  background: rgba(#3083dc, 0.8);
+  color: #ffffff;
+}
+
+::-webkit-scrollbar {
+  width: 3px;
+  height: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: $primary;
+  border-radius: 10rem;
+}
+
+svg {
+  fill: currentColor;
+  pointer-events: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

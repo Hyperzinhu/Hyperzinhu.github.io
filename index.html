@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portifólio - Gabriel Sferra">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="shortcut icon" type="image/png" href="assets/img/favicon.png">
+
+  <title>Portifólio - Gabriel Sferra</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__container">
+      <button class="header__menu-button u-mobile" onclick="openMenu('menu')">
+        <svg width='34' height='24'>
+          <use xlink:href='#icon-menu'></use>
+        </svg>
+      </button>
+      <a href="/" aria-label="Gabriel Sferra icon" class="header__logo">
+        <svg width='252' height='20'>
+          <use xlink:href='#logo'></use>
+        </svg>
+      </a>
+      <nav class="menu" id="menu" onclick="closeMenu(event, 'menu')">
+        <div class="menu__wrapper">
+          <div class="menu__header u-mobile">
+            <span>
+              <svg width="34" height="24">
+                <use xlink:href="#icon-menu"></use>
+              </svg>
+              Menu
+            </span>
+            <div id="menu-close" onclick="closeMenu(event, 'menu')">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M18.9977 0.1622L0.161837 18.998C-0.0548275 19.2147 -0.0548274 19.566 0.161837 19.7826L0.217775 19.8386C0.434439 20.0552 0.785722 20.0552 1.00239 19.8386L19.8382 1.00275C20.0549 0.786085 20.0549 0.434801 19.8382 0.218136L19.7823 0.162198C19.5656 -0.054466 19.2143 -0.0544649 18.9977 0.1622Z"
+                  fill="#3083dc" />
+                <path
+                  d="M19.838 18.9977L1.00217 0.161837C0.785505 -0.0548275 0.434222 -0.0548274 0.217558 0.161837L0.16162 0.217775C-0.0550448 0.434439 -0.0550449 0.785722 0.161619 1.00239L18.9974 19.8382C19.2141 20.0549 19.5654 20.0549 19.782 19.8382L19.838 19.7823C20.0546 19.5656 20.0546 19.2143 19.838 18.9977Z"
+                  fill="#3083dc" />
+              </svg>
+            </div>
+          </div>
+          <a class="menu__link" href="/">Home</a>
+          <a class="menu__link" href="/about">About</a>
+          <a class="menu__link" href="/tech-stack">Tech Stack</a>
+          <a class="menu__link" href="/projects">Projects</a>
+          <a class="menu__link" href="/contact">Contact</a>
+          <div class="menu__social">
+            <a class="menu__link menu__link--social" aria-label="Github" href="https://github.com/Hyperzinhu"
+              target="_blank">
+              <svg width='30' height='30'>
+                <use xlink:href='#icon-github'></use>
+              </svg>
+            </a>
+            <a class="menu__link menu__link--social" aria-label="Twitter" href="https://twitter.com/Gabriel_Sferra"
+              target="_blank">
+              <svg width='30' height='30'>
+                <use xlink:href='#icon-twitter'></use>
+              </svg>
+            </a>
+            <a class="menu__link menu__link--social" aria-label="Linkedin"
+              href="https://www.linkedin.com/in/gabriel-sferra-b3449021a/" target="_blank">
+              <svg width='30' height='30'>
+                <use xlink:href='#icon-linkedin'></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="u-container">
+    <article class="about">
+      <h1>
+        Hi 👋, <br />
+        My name is <br />
+        Gabriel <span>Sferra</span> <br />
+        I build things for web
+      </h1>
+      <div class="about__image">
+        <img src="assets/img/about-image.png" alt="">
+      </div>
+    </article>
+
+    <section class="technologies">
+      <div class="technologies__heading">
+        <h2>My Tech Stack</h2>
+        <p class="subtitle">Technologies I’ve been working with recently</p>
+      </div>
+      <div class="technologies__wrapper">
+        <div>
+          <img src="assets/img/html.svg" alt="HTML5 icon">
+        </div>
+        <div>
+          <img src="assets/img/css.svg" alt="CSS3 icon">
+        </div>
+        <div>
+          <img src="assets/img/js.svg" alt="JavaScript icon">
+        </div>
+        <div>
+          <img src="assets/img/react.svg" alt="React icon">
+        </div>
+        <div>
+          <img src="assets/img/sass.svg" alt="Sass icon">
+        </div>
+        <div>
+          <img src="assets/img/git.svg" alt="Git icon">
+        </div>
+        <div>
+          <img src="assets/img/github.svg" alt="Github icon">
+        </div>
+      </div>
+    </section>
+
+    <section class="projects">
+      <div class="projects__heading">
+        <h2>Projects</h2>
+        <p class="subtitle">Websites I’ve built so far</p>
+      </div>
+      <div class="row">
+        <div class="col-1-of-3">
+          <div class="card">
+            <div class="card__side card__side--front card__side--front">
+              <div class="card__picture card__picture">
+                <img src="assets/img/thumb-mae-terra.png" alt="Layout Mãe Terra">
+              </div>
+              <div class="card__details">
+                <h3 class="card__title">Mãe Terra</h3>
+                <p class="card__descriptionm">Project carried out in collaboration with Auaha Agency for the client Mãe
+                  Terra, and successfully implemented on the MercadoShops platform.</p>
+                <small><strong>E-commerce: </strong>MercadoShops</small><br />
+                <small><strong>Tech stack: </strong>Hbs, JQuery, Stylus</small>
+              </div>
+            </div>
+            <div class="card__side card__side--back card__side--back">
+              <div class="card__layout">
+                <a href="https://loja.maeterra.com.br/" target="_blank" aria-label="Loja Mãe Terra">
+                  <img src="assets/img/layout-mae-terra.png" alt="Full Layout Mãe Terra">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-1-of-3">
+          <div class="card">
+            <div class="card__side card__side--front card__side--front">
+              <div class="card__picture card__picture">
+                <img src="assets/img/thumb-abc.png" alt="Layout ABC da Construção">
+              </div>
+              <div class="card__details">
+                <h3 class="card__title">ABC da Construção</h3>
+                <p class="card__descriptionm">Project carried out in collaboration with Auaha Agency for the client ABC
+                  da Construção, and successfully implemented on the Wake platform.</p>
+                <small><strong>E-commerce: </strong>Wake</small><br />
+                <small><strong>Tech stack: </strong>HTML5, GraphQL, Stylus, JavaSript</small>
+              </div>
+            </div>
+            <div class="card__side card__side--back card__side--back">
+              <div class="card__layout">
+                <a href="https://www.abcdaconstrucao.com.br/" target="_blank" aria-label="Loja ABC da Construção">
+                  <img src="assets/img/layout-abc.png" alt="Full Layout ABC da Construção">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-1-of-3">
+          <div class="card">
+            <div class="card__side card__side--front card__side--front">
+              <div class="card__picture card__picture">
+                <img src="assets/img/thumb-defitness.png" alt="Layout Defitness">
+              </div>
+              <div class="card__details">
+                <h3 class="card__title">Defitness</h3>
+                <p class="card__descriptionm">Project carried out in collaboration with Auaha Agency for the client
+                  Defitness, and successfully implemented on the Wake platform.</p>
+                <small><strong>E-commerce: </strong>Wake</small><br />
+                <small><strong>Tech stack: </strong>HTML5, JQuery, Stylus</small>
+              </div>
+            </div>
+            <div class="card__side card__side--back card__side--back">
+              <div class="card__layout">
+                <a href="https://www.defitness.com.br/" target="_blank" aria-label="Loja Defitness">
+                  <img src="assets/img/layout-defitness.png" alt="Full Layout Defitness">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-1-of-3">
+          <div class="card">
+            <div class="card__side card__side--front card__side--front">
+              <div class="card__picture card__picture">
+                <img src="assets/img/thumb-rs.png" alt="Layout RS Air Filter">
+              </div>
+              <div class="card__details">
+                <h3 class="card__title">RS Air Filter</h3>
+                <p class="card__descriptionm">Project carried out in collaboration with Auaha Agency for the client RS
+                  Air Filter, and successfully implemented on the Wake platform.</p>
+                <small><strong>E-commerce: </strong>Wake</small><br />
+                <small><strong>Tech stack: </strong>HTML5, Jquery, Stylus</small>
+              </div>
+            </div>
+            <div class="card__side card__side--back card__side--back">
+              <div class="card__layout">
+                <a href="https://www.rsairfilter.com.br/" target="_blank" aria-label="Loja RS Air Filter">
+                  <img src="assets/img/layout-rs.png" alt="Full Layout RS Air Filter">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-1-of-3">
+          <div class="card">
+            <div class="card__side card__side--front card__side--front">
+              <div class="card__picture card__picture">
+                <img src="assets/img/thumb-dlk.png" alt="Layout DLK Modas">
+              </div>
+              <div class="card__details">
+                <h3 class="card__title">DLK Modas</h3>
+                <p class="card__descriptionm">Project carried out in collaboration with Auaha Agency for the client DLK
+                  Modas, and successfully implemented on the Wake platform.</p>
+                <small><strong>E-commerce: </strong>Wake</small><br />
+                <small><strong>Tech stack: </strong>HTML5, GraphQL, JavaScript, Stylus</small>
+              </div>
+            </div>
+            <div class="card__side card__side--back card__side--back">
+              <div class="card__layout">
+                <a href="https://www.rsairfilter.com.br/" target="_blank" aria-label="Loja DLK Modas">
+                  <img src="assets/img/layout-dlk.png" alt="Full Layout DLK Modas">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-1-of-3">
+          <a class="projects__link" href="/projects">
+            <svg width='18' height='18'>
+              <use xlink:href='#icon-chain'></use>
+            </svg>
+            15+ projects...
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__container">
+      <a href="/" aria-label="Gabriel Sferra icon" class="footer__logo">
+        <svg width='252' height='20'>
+          <use xlink:href='#logo'></use>
+        </svg>
+      </a>
+      <div class="footer__info">
+        <a href="https://wa.me/+5501514996357444" class="footer__link">+55 14 99635-7444</a>
+        <a href="mailto:gfsferra35@gmail.com" class="footer__link">gfsferra35@gmail.com</a>
+        <a class="footer__link footer__link--social" aria-label="Github" href="https://github.com/Hyperzinhu"
+          target="_blank">
+          <svg width='30' height='30'>
+            <use xlink:href='#icon-github'></use>
+          </svg>
+        </a>
+        <a class="footer__link footer__link--social" aria-label="Twitter" href="https://twitter.com/Gabriel_Sferra"
+          target="_blank">
+          <svg width='30' height='30'>
+            <use xlink:href='#icon-twitter'></use>
+          </svg>
+        </a>
+        <a class="footer__link footer__link--social" aria-label="Linkedin"
+          href="https://www.linkedin.com/in/gabriel-sferra-b3449021a/" target="_blank">
+          <svg width='30' height='30'>
+            <use xlink:href='#icon-linkedin'></use>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/scripts/script.js"></script>
+  <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.0"
+    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+      <symbol id="logo" viewBox="0 0 252 20">
+        <path
+          d="M142.224 19.2676C143.52 19.7746 144.9 20 146.365 20C147.914 20 149.238 19.7746 150.309 19.2958C151.379 18.8451 152.168 18.1972 152.675 17.4085C153.182 16.6197 153.463 15.7465 153.463 14.7887C153.463 13.6338 153.154 12.7042 152.534 12.0282C151.914 11.3521 151.182 10.8169 150.337 10.4789C149.463 10.1408 148.309 9.80282 146.872 9.43662C145.576 9.12676 144.534 8.8169 143.801 8.53521C143.041 8.25352 142.421 7.85915 141.914 7.32394C141.407 6.8169 141.154 6.11268 141.154 5.21127C141.154 4.05634 141.604 3.09859 142.562 2.3662C143.492 1.6338 144.872 1.2676 146.703 1.2676C147.604 1.2676 148.534 1.40845 149.492 1.69014C150.449 1.97183 151.323 2.39437 152.111 2.92958L152.647 1.77465C151.858 1.23944 150.956 0.816901 149.914 0.478873C148.844 0.169014 147.773 0 146.703 0C145.125 0 143.83 0.253521 142.787 0.704225C141.745 1.1831 140.985 1.83099 140.478 2.61972C139.97 3.40845 139.717 4.28169 139.717 5.23944C139.717 6.42253 139.999 7.38028 140.618 8.08451C141.238 8.78873 141.97 9.29577 142.844 9.6338C143.717 9.97183 144.872 10.338 146.337 10.6761C147.604 10.9859 148.618 11.2676 149.379 11.5493C150.111 11.831 150.759 12.2535 151.266 12.7606C151.773 13.2958 152.027 14 152.027 14.8732C152.027 16.0282 151.548 16.9577 150.59 17.662C149.632 18.3944 148.196 18.7324 146.337 18.7324C145.041 18.7324 143.801 18.507 142.618 18.0563C141.435 17.6056 140.506 16.9859 139.83 16.2535L139.182 17.3239C139.914 18.1127 140.928 18.7606 142.224 19.2676Z"
+          fill="#3083DC" />
+        <path
+          d="M158.347 0.140869V1.43664H170.967V0.140869H158.347ZM158.347 19.8592H159.784V11.155H170.967V9.85918H158.347V19.8592Z"
+          fill="#3083DC" />
+        <path
+          d="M188.878 9.21129H176.118V10.4789H188.878V9.21129ZM188.878 0.140869H176.118V1.43664H188.878V0.140869ZM176.118 18.5634V19.8592H188.878V18.5634H176.118Z"
+          fill="#3083DC" />
+        <path
+          d="M205.383 12.9578C206.848 12.5352 208.003 11.8028 208.792 10.7324C209.58 9.662 210.003 8.36622 210.003 6.78876C210.003 4.73242 209.299 3.09862 207.89 1.91552C206.482 0.73242 204.538 0.140869 202.059 0.140869H194.989V1.43664H202.059C204.144 1.43664 205.749 1.91552 206.876 2.8451C207.975 3.77467 208.538 5.09862 208.538 6.78876C208.538 8.50707 207.975 9.83101 206.876 10.7606C205.749 11.6902 204.144 12.1409 202.059 12.1409H194.989V19.8592H196.426V13.4085H202.059C202.623 13.4085 203.271 13.3803 203.975 13.2676L208.679 19.8592H210.313L205.383 12.9578Z"
+          fill="#3083DC" />
+        <path
+          d="M225.685 12.9578C227.15 12.5352 228.304 11.8028 229.093 10.7324C229.882 9.662 230.304 8.36622 230.304 6.78876C230.304 4.73242 229.6 3.09862 228.192 1.91552C226.783 0.73242 224.84 0.140869 222.361 0.140869H215.29V1.43664H222.361C224.445 1.43664 226.051 1.91552 227.178 2.8451C228.276 3.77467 228.84 5.09862 228.84 6.78876C228.84 8.50707 228.276 9.83101 227.178 10.7606C226.051 11.6902 224.445 12.1409 222.361 12.1409H215.29V19.8592H216.727V13.4085H222.361C222.924 13.4085 223.572 13.3803 224.276 13.2676L228.981 19.8592H230.614L225.685 12.9578Z"
+          fill="#3083DC" />
+        <path
+          d="M242.803 0.140869H241.367L232.296 19.8592H233.845L242.071 1.71833L250.324 19.8592H251.874L242.803 0.140869Z"
+          fill="#3083DC" />
+        <path
+          d="M15.9718 10.0845V16.8732C14.4789 18.0845 12.6197 18.6761 10.3662 18.6761C8.67606 18.6761 7.15493 18.3099 5.80282 17.5493C4.45071 16.7887 3.38028 15.7465 2.59155 14.4225C1.80282 13.0986 1.43662 11.6338 1.43662 10C1.43662 8.3662 1.80282 6.90141 2.59155 5.57746C3.35212 4.25352 4.42254 3.21127 5.77465 2.4507C7.12676 1.71831 8.67606 1.32394 10.3662 1.32394C11.6056 1.32394 12.7324 1.52113 13.7465 1.88732C14.7606 2.25352 15.6901 2.84507 16.5352 3.66197L17.4366 2.70422C16.5634 1.83099 15.5211 1.15493 14.3099 0.704225C13.0986 0.253521 11.7746 0 10.338 0C8.3662 0 6.59155 0.450703 5.01409 1.29577C3.43662 2.16901 2.22535 3.35211 1.32394 4.87324C0.422536 6.39437 0 8.11268 0 10C0 11.9155 0.422536 13.6056 1.32394 15.1268C2.22535 16.6479 3.43662 17.8592 5.01409 18.7042C6.59155 19.5775 8.33803 20 10.3099 20C11.662 20 12.9578 19.8028 14.1972 19.3521C15.4366 18.9296 16.4789 18.3099 17.3521 17.4648V10.0845H15.9718Z"
+          fill="#F8FFE5" />
+        <path
+          d="M30.8856 0.140869H29.449L20.3785 19.8592H21.9278L30.1532 1.71833L38.4067 19.8592H39.956L30.8856 0.140869Z"
+          fill="#F8FFE5" />
+        <path
+          d="M58.4652 11.3521C57.7328 10.5071 56.6624 9.97186 55.254 9.69017C56.2399 9.38031 57.0568 8.81693 57.6483 8.02819C58.2399 7.26763 58.5497 6.33805 58.5497 5.18312C58.5497 3.57749 57.93 2.33805 56.7469 1.46481C55.5638 0.591574 53.9018 0.140869 51.761 0.140869H43.5356V1.38031H51.7047C53.423 1.38031 54.7469 1.71833 55.6765 2.39439C56.6061 3.07045 57.0849 4.02819 57.0849 5.2958C57.0849 6.59157 56.6061 7.57749 55.6765 8.25355C54.7469 8.9296 53.423 9.23946 51.7047 9.23946H43.5356V10.4789H52.3244C54.2117 10.4789 55.6765 10.8169 56.6624 11.4648C57.6483 12.1409 58.1554 13.155 58.1554 14.5352C58.1554 15.9437 57.6483 16.9578 56.6624 17.6338C55.6765 18.3099 54.2399 18.6197 52.3244 18.6197H43.5356V19.8592H52.3244C54.7187 19.8592 56.5216 19.4085 57.761 18.5071C58.9723 17.6057 59.592 16.3381 59.592 14.6479C59.592 13.324 59.1976 12.2254 58.4652 11.3521Z"
+          fill="#F8FFE5" />
+        <path
+          d="M75.1118 12.9578C76.5766 12.5352 77.7315 11.8028 78.5202 10.7324C79.309 9.662 79.7315 8.36622 79.7315 6.78876C79.7315 4.73242 79.0273 3.09862 77.6188 1.91552C76.2104 0.73242 74.2667 0.140869 71.7878 0.140869H64.7174V1.43664H71.7878C73.8723 1.43664 75.478 1.91552 76.6047 2.8451C77.7033 3.77467 78.2667 5.09862 78.2667 6.78876C78.2667 8.50707 77.7033 9.83101 76.6047 10.7606C75.478 11.6902 73.8723 12.1409 71.7878 12.1409H64.7174V19.8592H66.154V13.4085H71.7878C72.3512 13.4085 72.9991 13.3803 73.7033 13.2676L78.4075 19.8592H80.0414L75.1118 12.9578Z"
+          fill="#F8FFE5" />
+        <path d="M85.0189 0.140869V19.8592H86.4555V0.140869H85.0189Z" fill="#F8FFE5" />
+        <path
+          d="M106.087 9.21129H93.3267V10.4789H106.087V9.21129ZM106.087 0.140869H93.3267V1.43664H106.087V0.140869ZM93.3267 18.5634V19.8592H106.087V18.5634H93.3267Z"
+          fill="#F8FFE5" />
+        <path d="M112.198 0.140869V19.8592H124.986V18.5634H113.634V0.140869H112.198Z" fill="#F8FFE5" />
+      </symbol>
+      <symbol id="icon-github" viewBox="0 0 30 30">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M15 0C6.7125 0 0 6.7125 0 15C0 21.6375 4.29375 27.2437 10.2563 29.2313C11.0063 29.3625 11.2875 28.9125 11.2875 28.5188C11.2875 28.1625 11.2688 26.9813 11.2688 25.725C7.5 26.4188 6.525 24.8062 6.225 23.9625C6.05625 23.5312 5.325 22.2 4.6875 21.8438C4.1625 21.5625 3.4125 20.8687 4.66875 20.85C5.85 20.8313 6.69375 21.9375 6.975 22.3875C8.325 24.6562 10.4812 24.0187 11.3438 23.625C11.475 22.65 11.8688 21.9937 12.3 21.6187C8.9625 21.2437 5.475 19.95 5.475 14.2125C5.475 12.5813 6.05625 11.2313 7.0125 10.1813C6.8625 9.80625 6.3375 8.26875 7.1625 6.20625C7.1625 6.20625 8.41875 5.8125 11.2875 7.74375C12.4875 7.40625 13.7625 7.2375 15.0375 7.2375C16.3125 7.2375 17.5875 7.40625 18.7875 7.74375C21.6562 5.79375 22.9125 6.20625 22.9125 6.20625C23.7375 8.26875 23.2125 9.80625 23.0625 10.1813C24.0188 11.2313 24.6 12.5625 24.6 14.2125C24.6 19.9688 21.0938 21.2437 17.7563 21.6187C18.3 22.0875 18.7688 22.9875 18.7688 24.3937C18.7688 26.4 18.75 28.0125 18.75 28.5188C18.75 28.9125 19.0312 29.3813 19.7812 29.2313C22.759 28.2259 25.3465 26.3121 27.1796 23.7592C29.0127 21.2063 29.9991 18.1429 30 15C30 6.7125 23.2875 0 15 0Z" />
+      </symbol>
+      <symbol id="icon-twitter" viewBox="0 0 31 31">
+        <path
+          d="M15.875 0.875C7.59152 0.875 0.875 7.59152 0.875 15.875C0.875 24.1585 7.59152 30.875 15.875 30.875C24.1585 30.875 30.875 24.1585 30.875 15.875C30.875 7.59152 24.1585 0.875 15.875 0.875ZM23.0837 12.1819C23.0937 12.3393 23.0937 12.5033 23.0937 12.6641C23.0937 17.5792 19.3504 23.2411 12.51 23.2411C10.4007 23.2411 8.44531 22.6283 6.79799 21.5737C7.09933 21.6071 7.38728 21.6205 7.69531 21.6205C9.43638 21.6205 11.0368 21.0312 12.3125 20.0335C10.6786 20 9.3058 18.9286 8.83705 17.4554C9.4096 17.5391 9.92522 17.5391 10.5145 17.3884C9.67319 17.2175 8.91699 16.7605 8.37438 16.0953C7.83178 15.43 7.53623 14.5973 7.53795 13.7388V13.692C8.03013 13.9699 8.60937 14.1406 9.2154 14.1641C8.70595 13.8245 8.28814 13.3645 7.99903 12.8249C7.70993 12.2852 7.55845 11.6825 7.55804 11.0703C7.55804 10.3772 7.73884 9.74442 8.06362 9.19531C8.99744 10.3449 10.1627 11.2851 11.4837 11.9548C12.8047 12.6245 14.2518 13.0088 15.731 13.0826C15.2054 10.5547 17.0937 8.50893 19.3638 8.50893C20.4353 8.50893 21.3996 8.95759 22.0792 9.6808C22.9196 9.52344 23.7232 9.2087 24.4397 8.78683C24.1618 9.64732 23.5792 10.3739 22.8058 10.8326C23.5558 10.7522 24.279 10.5446 24.9487 10.2533C24.4431 10.9967 23.8103 11.6563 23.0837 12.1819V12.1819Z" />
+      </symbol>
+      <symbol id="icon-linkedin" viewBox="0 0 30 30">
+        <g clip-path="url(#clip0_14_33)">
+          <path
+            d="M15.0001 0.599976C7.0471 0.599976 0.600098 7.04698 0.600098 15C0.600098 22.953 7.0471 29.4 15.0001 29.4C22.9531 29.4 29.4001 22.953 29.4001 15C29.4001 7.04698 22.9531 0.599976 15.0001 0.599976ZM11.4751 20.9685H8.5591V11.5845H11.4751V20.9685ZM9.9991 10.4325C9.0781 10.4325 8.4826 9.77998 8.4826 8.97298C8.4826 8.14948 9.0961 7.51648 10.0366 7.51648C10.9771 7.51648 11.5531 8.14948 11.5711 8.97298C11.5711 9.77998 10.9771 10.4325 9.9991 10.4325ZM22.1251 20.9685H19.2091V15.768C19.2091 14.5575 18.7861 13.7355 17.7316 13.7355C16.9261 13.7355 16.4476 14.292 16.2361 14.8275C16.1581 15.018 16.1386 15.288 16.1386 15.5565V20.967H13.2211V14.577C13.2211 13.4055 13.1836 12.426 13.1446 11.583H15.6781L15.8116 12.8865H15.8701C16.2541 12.2745 17.1946 11.3715 18.7681 11.3715C20.6866 11.3715 22.1251 12.657 22.1251 15.42V20.9685V20.9685Z" />
+        </g>
+        <defs>
+          <clipPath id="clip0_14_33">
+            <rect width="30" height="30" fill="white" />
+          </clipPath>
+        </defs>
+      </symbol>
+      <symbol id="icon-chain" viewBox="0 0 18 18">
+        <path
+          d="M10.2867 7.7133C9.60408 7.031 8.67846 6.64771 7.71334 6.64771C6.74821 6.64771 5.82259 7.031 5.14 7.7133L2.56584 10.2866C1.88324 10.9692 1.49976 11.895 1.49976 12.8604C1.49976 13.8257 1.88324 14.7515 2.56584 15.4341C3.24844 16.1167 4.17424 16.5002 5.13959 16.5002C6.10493 16.5002 7.03074 16.1167 7.71334 15.4341L9 14.1475"
+          stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+        <path
+          d="M7.71338 10.2867C8.39597 10.969 9.32159 11.3523 10.2867 11.3523C11.2518 11.3523 12.1775 10.969 12.86 10.2867L15.4342 7.71334C16.1168 7.03074 16.5003 6.10493 16.5003 5.13959C16.5003 4.17424 16.1168 3.24844 15.4342 2.56584C14.7516 1.88324 13.8258 1.49976 12.8605 1.49976C11.8951 1.49976 10.9693 1.88324 10.2867 2.56584L9.00005 3.8525"
+          stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+      </symbol>
+      <symbol id="icon-menu" viewBox="0 0 50 50">
+        <path d="M 0 9 L 0 11 L 50 11 L 50 9 Z M 0 24 L 0 26 L 50 26 L 50 24 Z M 0 39 L 0 41 L 50 41 L 50 39 Z"
+          fill="#f8ffe5"></path>
+      </symbol>
+    </defs>
+  </svg>
+</body>
+
+</html>
