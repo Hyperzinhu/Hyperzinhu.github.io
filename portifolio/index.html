@@ -8,8 +8,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/main.css">
-  <link rel="shortcut icon" type="image/png" href="assets/img/favicon.png">
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <link rel="shortcut icon" type="image/png" href="../assets/img/favicon.png">
 
   <title>Portifólio - Gabriel Sferra</title>
 </head>
@@ -22,7 +22,7 @@
           <use xlink:href='#icon-menu'></use>
         </svg>
       </button>
-      <a href="/" aria-label="Gabriel Sferra icon" class="header__logo">
+      <a href="#" aria-label="Gabriel Sferra icon" class="header__logo">
         <svg width='252' height='20'>
           <use xlink:href='#logo'></use>
         </svg>
@@ -47,11 +47,10 @@
               </svg>
             </div>
           </div>
-          <a class="menu__link" href="/">Home</a>
-          <a class="menu__link" href="/about">About</a>
-          <a class="menu__link" href="/tech-stack">Tech Stack</a>
-          <a class="menu__link" href="/projects">Projects</a>
-          <a class="menu__link" href="/contact">Contact</a>
+          <a class="menu__link" href="#about">About</a>
+          <a class="menu__link" href="#tech-stack">Tech Stack</a>
+          <a class="menu__link" href="#projects">Projects</a>
+          <a class="menu__link" href="#contact">Contact</a>
           <div class="menu__social">
             <a class="menu__link menu__link--social" aria-label="Github" href="https://github.com/Hyperzinhu"
               target="_blank">
@@ -78,7 +77,7 @@
   </header>
 
   <main class="u-container">
-    <article class="about">
+    <article class="about" id="about">
       <h1>
         Hi 👋, <br />
         My name is <br />
@@ -86,56 +85,59 @@
         I build things for web
       </h1>
       <div class="about__image">
-        <img src="assets/img/about-image.png" alt="">
+        <img src="../assets/img/about-image.png" alt="">
       </div>
     </article>
 
-    <section class="technologies">
+    <section class="technologies" id="tech-stack">
       <div class="technologies__heading">
         <h2>My Tech Stack</h2>
-        <p class="subtitle">Technologies I’ve been working with recently</p>
+        <p class="subtitle">Technologies I've been working with recently</p>
       </div>
       <div class="technologies__wrapper">
         <div>
-          <img src="assets/img/html.svg" alt="HTML5 icon">
+          <img src="../assets/img/html.svg" alt="HTML5 icon">
         </div>
         <div>
-          <img src="assets/img/css.svg" alt="CSS3 icon">
+          <img src="../assets/img/css.svg" alt="CSS3 icon">
         </div>
         <div>
-          <img src="assets/img/js.svg" alt="JavaScript icon">
+          <img src="../assets/img/js.svg" alt="JavaScript icon">
         </div>
         <div>
-          <img src="assets/img/react.svg" alt="React icon">
+          <img src="../assets/img/sass.svg" alt="Sass icon">
         </div>
         <div>
-          <img src="assets/img/sass.svg" alt="Sass icon">
+          <img src="../assets/img/graphql.svg" alt="Github icon">
         </div>
         <div>
-          <img src="assets/img/git.svg" alt="Git icon">
+          <img src="../assets/img/react.svg" alt="React icon">
         </div>
         <div>
-          <img src="assets/img/github.svg" alt="Github icon">
+          <img src="../assets/img/git.svg" alt="Git icon">
+        </div>
+        <div>
+          <img src="../assets/img/github.svg" alt="Github icon">
         </div>
       </div>
     </section>
 
-    <section class="projects">
+    <section class="projects" id="projects">
       <div class="projects__heading">
         <h2>Projects</h2>
-        <p class="subtitle">Websites I’ve built so far</p>
+        <p class="subtitle">Some websites I've built so far</p>
       </div>
       <div class="row">
         <div class="col-1-of-3">
           <div class="card">
             <div class="card__side card__side--front card__side--front">
               <div class="card__picture card__picture">
-                <img src="assets/img/thumb-mae-terra.png" alt="Layout Mãe Terra">
+                <img src="../assets/img/thumb-mae-terra.png" alt="Layout Mãe Terra">
               </div>
               <div class="card__details">
                 <h3 class="card__title">Mãe Terra</h3>
                 <p class="card__descriptionm">Project carried out in collaboration with Auaha Agency for the client Mãe
-                  Terra, and successfully implemented on the MercadoShops platform.</p>
+                  Terra, and successfully implemented on MercadoShops.</p>
                 <small><strong>E-commerce: </strong>MercadoShops</small><br />
                 <small><strong>Tech stack: </strong>Hbs, JQuery, Stylus</small>
               </div>
@@ -143,7 +145,7 @@
             <div class="card__side card__side--back card__side--back">
               <div class="card__layout">
                 <a href="https://loja.maeterra.com.br/" target="_blank" aria-label="Loja Mãe Terra">
-                  <img src="assets/img/layout-mae-terra.png" alt="Full Layout Mãe Terra">
+                  <img src="../assets/img/layout-mae-terra.png" alt="Full Layout Mãe Terra">
                 </a>
               </div>
             </div>
@@ -153,20 +155,20 @@
           <div class="card">
             <div class="card__side card__side--front card__side--front">
               <div class="card__picture card__picture">
-                <img src="assets/img/thumb-abc.png" alt="Layout ABC da Construção">
+                <img src="../assets/img/thumb-spilpack.png" alt="Layout Spilpack">
               </div>
               <div class="card__details">
-                <h3 class="card__title">ABC da Construção</h3>
-                <p class="card__descriptionm">Project carried out in collaboration with Auaha Agency for the client ABC
-                  da Construção, and successfully implemented on the Wake platform.</p>
-                <small><strong>E-commerce: </strong>Wake</small><br />
-                <small><strong>Tech stack: </strong>HTML5, GraphQL, Stylus, JavaSript</small>
+                <h3 class="card__title">Spilpack</h3>
+                <p class="card__descriptionm">Project carried out in collaboration with Auaha Agency for the client
+                  Spilpack, and successfully implemented on TrayCorp.</p>
+                <small><strong>E-commerce: </strong>TrayCorp</small><br />
+                <small><strong>Tech stack: </strong>HTML5, GraphQL, JavaScript, Sass</small>
               </div>
             </div>
             <div class="card__side card__side--back card__side--back">
               <div class="card__layout">
-                <a href="https://www.abcdaconstrucao.com.br/" target="_blank" aria-label="Loja ABC da Construção">
-                  <img src="assets/img/layout-abc.png" alt="Full Layout ABC da Construção">
+                <a href="https://www.spilpack.com.br/" target="_blank" aria-label="Loja spilpack">
+                  <img src="../assets/img/layout-spilpack.png" alt="Full Layout spilpack">
                 </a>
               </div>
             </div>
@@ -176,20 +178,20 @@
           <div class="card">
             <div class="card__side card__side--front card__side--front">
               <div class="card__picture card__picture">
-                <img src="assets/img/thumb-defitness.png" alt="Layout Defitness">
+                <img src="../assets/img/thumb-defitness.png" alt="Layout Defitness">
               </div>
               <div class="card__details">
                 <h3 class="card__title">Defitness</h3>
                 <p class="card__descriptionm">Project carried out in collaboration with Auaha Agency for the client
-                  Defitness, and successfully implemented on the Wake platform.</p>
-                <small><strong>E-commerce: </strong>Wake</small><br />
+                  Defitness, and successfully implemented on TrayCorp.</p>
+                <small><strong>E-commerce: </strong>TrayCorp</small><br />
                 <small><strong>Tech stack: </strong>HTML5, JQuery, Stylus</small>
               </div>
             </div>
             <div class="card__side card__side--back card__side--back">
               <div class="card__layout">
                 <a href="https://www.defitness.com.br/" target="_blank" aria-label="Loja Defitness">
-                  <img src="assets/img/layout-defitness.png" alt="Full Layout Defitness">
+                  <img src="../assets/img/layout-defitness.png" alt="Full Layout Defitness">
                 </a>
               </div>
             </div>
@@ -201,20 +203,20 @@
           <div class="card">
             <div class="card__side card__side--front card__side--front">
               <div class="card__picture card__picture">
-                <img src="assets/img/thumb-rs.png" alt="Layout RS Air Filter">
+                <img src="../assets/img/thumb-rs.png" alt="Layout RS Air Filter">
               </div>
               <div class="card__details">
                 <h3 class="card__title">RS Air Filter</h3>
                 <p class="card__descriptionm">Project carried out in collaboration with Auaha Agency for the client RS
-                  Air Filter, and successfully implemented on the Wake platform.</p>
-                <small><strong>E-commerce: </strong>Wake</small><br />
+                  Air Filter, and successfully implemented on TrayCorp.</p>
+                <small><strong>E-commerce: </strong>TrayCorp</small><br />
                 <small><strong>Tech stack: </strong>HTML5, Jquery, Stylus</small>
               </div>
             </div>
             <div class="card__side card__side--back card__side--back">
               <div class="card__layout">
                 <a href="https://www.rsairfilter.com.br/" target="_blank" aria-label="Loja RS Air Filter">
-                  <img src="assets/img/layout-rs.png" alt="Full Layout RS Air Filter">
+                  <img src="../assets/img/layout-rs.png" alt="Full Layout RS Air Filter">
                 </a>
               </div>
             </div>
@@ -224,38 +226,54 @@
           <div class="card">
             <div class="card__side card__side--front card__side--front">
               <div class="card__picture card__picture">
-                <img src="assets/img/thumb-dlk.png" alt="Layout DLK Modas">
+                <img src="../assets/img/thumb-abc.png" alt="Layout ABC da Construção">
               </div>
               <div class="card__details">
-                <h3 class="card__title">DLK Modas</h3>
-                <p class="card__descriptionm">Project carried out in collaboration with Auaha Agency for the client DLK
-                  Modas, and successfully implemented on the Wake platform.</p>
+                <h3 class="card__title">ABC da Construção</h3>
+                <p class="card__descriptionm">Project carried out in collaboration with Auaha Agency for the client ABC
+                  da Construção, and successfully implemented on Wake.</p>
                 <small><strong>E-commerce: </strong>Wake</small><br />
-                <small><strong>Tech stack: </strong>HTML5, GraphQL, JavaScript, Stylus</small>
+                <small><strong>Tech stack: </strong>HTML5, GraphQL, Stylus, JavaSript</small>
               </div>
             </div>
             <div class="card__side card__side--back card__side--back">
               <div class="card__layout">
-                <a href="https://www.rsairfilter.com.br/" target="_blank" aria-label="Loja DLK Modas">
-                  <img src="assets/img/layout-dlk.png" alt="Full Layout DLK Modas">
+                <a href="https://www.abcdaconstrucao.com.br/" target="_blank" aria-label="Loja ABC da Construção">
+                  <img src="../assets/img/layout-abc.png" alt="Full Layout ABC da Construção">
                 </a>
               </div>
             </div>
           </div>
         </div>
         <div class="col-1-of-3">
-          <a class="projects__link" href="/projects">
-            <svg width='18' height='18'>
-              <use xlink:href='#icon-chain'></use>
-            </svg>
-            15+ projects...
-          </a>
+          <div class="card">
+            <div class="card__side card__side--front card__side--front">
+              <div class="card__picture card__picture">
+                <img src="../assets/img/thumb-suggar.png" alt="Layout suggar">
+              </div>
+              <div class="card__details">
+                <h3 class="card__title">Suggar</h3>
+                <p class="card__descriptionm">Project carried out in collaboration with Auaha Agency for the client
+                  Suggar, and successfully implemented on Wake.</p>
+                <small><strong>E-commerce: </strong>Wake</small><br />
+                <small><strong>Tech stack: </strong>HTML5, Jquery, Stylus</small>
+              </div>
+            </div>
+            <div class="card__side card__side--back card__side--back">
+              <div class="card__layout">
+                <a href="https://www2.suggar.com.br/" target="_blank" aria-label="Loja Suggar">
+                  <img src="../assets/img/layout-suggar.png" alt="Full Layout Suggar">
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
+
       </div>
     </section>
   </main>
 
-  <footer class="footer">
+  <footer class="footer" id="contact">
     <div class="footer__container">
       <a href="/" aria-label="Gabriel Sferra icon" class="footer__logo">
         <svg width='252' height='20'>
@@ -283,11 +301,18 @@
             <use xlink:href='#icon-linkedin'></use>
           </svg>
         </a>
+        <a class="footer__link footer__link--social" aria-label="Curriculum" href="../gabriel_sferra_curriculum.pdf"
+          target="_blank" download="gabriel_sferra_curriculum">
+          <svg width='30' height='30'>
+            <use xlink:href='#icon-download'></use>
+          </svg>
+          Curriculum
+        </a>
       </div>
     </div>
   </footer>
 
-  <script src="assets/scripts/script.js"></script>
+  <script src="../assets/scripts/script.js"></script>
   <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.0"
     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <defs>
@@ -358,6 +383,14 @@
       <symbol id="icon-menu" viewBox="0 0 50 50">
         <path d="M 0 9 L 0 11 L 50 11 L 50 9 Z M 0 24 L 0 26 L 50 26 L 50 24 Z M 0 39 L 0 41 L 50 41 L 50 39 Z"
           fill="#f8ffe5"></path>
+      </symbol>
+      <symbol id="icon-download" viewBox="0 0 30 31">
+        <path opacity="0.5" fill-rule="evenodd" clip-rule="evenodd"
+          d="M3.75 18.3301C4.26776 18.3301 4.6875 18.7498 4.6875 19.2676C4.6875 21.0618 4.68949 22.3132 4.81644 23.2575C4.93975 24.1747 5.16531 24.6603 5.51126 25.0063C5.85721 25.3523 6.34294 25.5778 7.26015 25.7012C8.20434 25.8281 9.45574 25.8301 11.25 25.8301H18.75C20.5443 25.8301 21.7956 25.8281 22.7399 25.7012C23.6571 25.5778 24.1427 25.3523 24.4887 25.0063C24.8347 24.6603 25.0603 24.1747 25.1836 23.2575C25.3105 22.3132 25.3125 21.0618 25.3125 19.2676C25.3125 18.7498 25.7322 18.3301 26.25 18.3301C26.7678 18.3301 27.1875 18.7498 27.1875 19.2676V19.3362C27.1875 21.0457 27.1875 22.4236 27.0419 23.5073C26.8906 24.6325 26.567 25.5797 25.8146 26.3321C25.0621 27.0846 24.1149 27.4082 22.9897 27.5595C21.906 27.7051 20.5281 27.7051 18.8186 27.7051H11.1814C9.47193 27.7051 8.09403 27.7051 7.01031 27.5595C5.88518 27.4082 4.93784 27.0846 4.18544 26.3322C3.43304 25.5797 3.10943 24.6325 2.95815 23.5073C2.81245 22.4236 2.81248 21.0457 2.8125 19.3362C2.8125 19.3133 2.8125 19.2905 2.8125 19.2676C2.8125 18.7498 3.23224 18.3301 3.75 18.3301Z"
+          fill="white" />
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M15 21.4551C15.2633 21.4551 15.5143 21.3445 15.6919 21.1502L20.6919 15.6815C21.0412 15.2993 21.0147 14.7063 20.6326 14.357C20.2505 14.0076 19.6575 14.0341 19.3081 14.4162L15.9375 18.1028V4.26758C15.9375 3.74982 15.5178 3.33008 15 3.33008C14.4823 3.33008 14.0625 3.74982 14.0625 4.26758V18.1028L10.6919 14.4162C10.3425 14.0341 9.74954 14.0076 9.36741 14.357C8.98529 14.7063 8.95873 15.2993 9.3081 15.6815L14.3081 21.1502C14.4858 21.3445 14.7368 21.4551 15 21.4551Z"
+          fill="white" />
       </symbol>
     </defs>
   </svg>
